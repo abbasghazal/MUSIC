@@ -1,0 +1,74 @@
+{
+    "name": "Shahm Music",
+    "description": "اهلا بك في سورس شهم ميوزك لتشغيل الاغاني في المكالمات.",
+    "logo": "https://telegra.ph/file/eab9c2e218b2b9aac1cef.jpg",
+    "keywords": [
+    "python3",
+    "telegram",
+    "bot",
+    "Shahm",
+    "shahmmusic",
+    "shahmmusicbot",
+    "pyrogram"
+    ],
+    "stack": "container",
+    "env": {
+      "API_ID": {
+        "description": " احصل على هذه القيمة من  https://my.telegram.org",
+        "value": "",
+        "required": true
+      },
+      "API_HASH": {
+        "description": " احصل على هذه القيمة من   https://my.telegram.org",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "توكن البوت الذي صنعته من @Botfather",
+        "value": "",
+        "required": true
+      },
+      "OWNER_ID": {
+        "description": "ايدي الحساب الذي ترغب في اضافته مالك او ايديات المالكين يجب فصل الايديات ب مسافه.",
+        "value": "6066647930",
+        "required": true
+      },        
+      "MONGO_DB_URI": {
+        "description": "Mongo DB URL",
+        "value": "",
+        "required": true
+      },
+      "STRING_SESSION": {
+        "description": "كود سيشن بايروجرام الذي حصلت عليه من بوت @TERMUX_CODE1_BOT",
+        "value": "",
+        "required": true
+      },
+      "HEROKU_API_KEY": {
+        "description": "ايبي كي هيروكو يمكنك الحصول عليه من  https://dashboard.heroku.com/account",
+        "value": "",
+        "required": false
+      },
+      "HEROKU_APP_NAME": {
+        "description": "الاسم الذي كتبته في اول مربع اعد كتابته هنا وباحرف صغيرة",
+        "value": "",
+        "required": false
+      },
+      "LOG_GROUP_ID": {
+        "description": "ايدي كروب السجل يمكنك الحصول عليه باضافة بوت روزي واعطاءه كافة الصلاحيات ثم ارسل /id وقم بنسخ الارقام التي تظهر .",
+        "value": "",
+        "required": true
+      }
+    },
+    "buildpacks": [
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
+      "stack": "container"
+  }
